@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pauta Estratégica — Abril & Maio 2026 · Alysson Sthurd</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --dark: #0A1F10;
+  --dark2: #0D2B18;
+  --green: #4EC97A;
+  --green-dim: rgba(78,201,122,0.12);
+  --green-border: rgba(78,201,122,0.30);
+  --cream: #EEF6EF;
+  --cream2: #E2EFE3;
+  --text: #1a1a1a;
+  --muted: #6b7c6f;
+  --red: #B43C1E;
+  --red-dim: rgba(180,60,30,0.08);
+  --red-border: rgba(180,60,30,0.22);
+  --blue: #2E6DA4;
+  --blue-dim: rgba(46,109,164,0.10);
+  --blue-border: rgba(46,109,164,0.25);
+  --gold: #B8892A;
+  --gold-dim: rgba(184,137,42,0.10);
+  --gold-border: rgba(184,137,42,0.25);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── HEADER ─────────────────────────────────── */
+.site-header {
+  background: var(--dark2);
+  padding: 48px 64px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.site-header::after {
+  content: '';
+  position: absolute; bottom: -60px; right: -60px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(78,201,122,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.header-tag {
+  font-size: 13px; font-weight: 600; letter-spacing: 5px;
+  text-transform: uppercase; color: var(--green);
+  margin-bottom: 20px;
+}
+.header-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 42px; font-weight: 700; line-height: 1.2;
+  color: #E8F5EC; margin-bottom: 12px;
+}
+.header-title em { color: var(--green); font-style: italic; }
+.header-sub {
+  font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.42);
+  max-width: 600px; line-height: 1.6;
+}
+.header-meta {
+  margin-top: 32px; padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex; gap: 40px; flex-wrap: wrap;
+}
+.meta-item { }
+.meta-label { font-size: 12px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 4px; }
+.meta-value { font-size: 16px; font-weight: 400; color: rgba(255,255,255,0.65); }
+.meta-value strong { color: var(--green); font-weight: 500; }
+
+/* ── ARCO NARRATIVO ─────────────────────────── */
+.arc-section {
+  background: var(--dark);
+  padding: 48px 64px;
+  border-bottom: 1px solid rgba(78,201,122,0.08);
+}
+.arc-title {
+  font-size: 12px; font-weight: 600; letter-spacing: 5px;
+  text-transform: uppercase; color: var(--green);
+  margin-bottom: 28px;
+}
+.arc-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.arc-card {
+  padding: 28px 32px;
+  border-left: 3px solid var(--green);
+  background: rgba(78,201,122,0.04);
+}
+.arc-month {
+  font-size: 11px; font-weight: 700; letter-spacing: 4px;
+  text-transform: uppercase; color: var(--green);
+  margin-bottom: 8px;
+}
+.arc-theme {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 22px; color: #E8F5EC; margin-bottom: 10px; line-height: 1.3;
+}
+.arc-desc {
+  font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.42); line-height: 1.6;
+}
+
+/* ── PILARES ─────────────────────────────────── */
+.pillars-section {
+  background: var(--dark2);
+  padding: 40px 64px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.pillars-title {
+  font-size: 12px; font-weight: 600; letter-spacing: 5px;
+  text-transform: uppercase; color: rgba(255,255,255,0.28);
+  margin-bottom: 24px;
+}
+.pillars-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.pillar-badge {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid;
+  font-size: 13px; font-weight: 500; letter-spacing: 1px;
+}
+.p-reg { border-color: var(--green-border); color: var(--green); background: var(--green-dim); }
+.p-beh { border-color: var(--blue-border); color: #6AAFD4; background: var(--blue-dim); }
+.p-b2b { border-color: var(--gold-border); color: #D4A84B; background: var(--gold-dim); }
+.p-hum { border-color: var(--red-border); color: #D4705A; background: var(--red-dim); }
+.p-pos { border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.50); background: rgba(255,255,255,0.03); }
+
+/* ── TABS ────────────────────────────────────── */
+.tabs-nav {
+  display: flex; background: var(--dark2);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 0 64px;
+  position: sticky; top: 0; z-index: 100;
+}
+.tab-btn {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; color: rgba(255,255,255,0.30);
+  padding: 20px 0; margin-right: 48px;
+  border: none; background: none; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+.tab-btn.active { color: var(--green); border-bottom-color: var(--green); }
+.tab-btn:hover:not(.active) { color: rgba(255,255,255,0.55); }
+
+/* ── MONTH SECTIONS ──────────────────────────── */
+.month-section { display: none; }
+.month-section.active { display: block; }
+
+/* ── WEEK CARDS ──────────────────────────────── */
+.weeks-container { padding: 48px 64px; display: flex; flex-direction: column; gap: 40px; }
+
+.week-card {
+  background: white;
+  border-top: 4px solid;
+  overflow: hidden;
+}
+.week-card.reg { border-top-color: var(--green); }
+.week-card.beh { border-top-color: #2E6DA4; }
+.week-card.b2b { border-top-color: var(--gold); }
+.week-card.hum { border-top-color: var(--red); }
+.week-card.pos { border-top-color: rgba(0,0,0,0.2); }
+
+.week-header {
+  display: grid; grid-template-columns: 120px 1fr auto;
+  align-items: start; gap: 28px;
+  padding: 28px 32px 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.week-num-block { }
+.week-num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 48px; font-weight: 700; color: rgba(0,0,0,0.06);
+  line-height: 1;
+}
+.week-dates { font-size: 13px; color: var(--muted); margin-top: 4px; letter-spacing: 0.5px; }
+
+.week-info { }
+.week-pillar-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 700; letter-spacing: 4px;
+  text-transform: uppercase; padding: 5px 12px;
+  margin-bottom: 10px;
+}
+.reg .week-pillar-tag { background: var(--green-dim); color: #1A6635; }
+.beh .week-pillar-tag { background: var(--blue-dim); color: #1E4A72; }
+.b2b .week-pillar-tag { background: var(--gold-dim); color: #7A5E1A; }
+.hum .week-pillar-tag { background: var(--red-dim); color: var(--red); }
+.pos .week-pillar-tag { background: rgba(0,0,0,0.04); color: rgba(0,0,0,0.40); }
+
+.week-theme {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px; font-weight: 700; color: var(--dark2); line-height: 1.25;
+}
+.week-intent {
+  font-size: 14px; color: var(--muted); margin-top: 6px; line-height: 1.5;
+}
+
+.week-objective {
+  text-align: right; min-width: 140px;
+}
+.obj-label { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(0,0,0,0.22); margin-bottom: 6px; }
+.obj-value {
+  display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; padding: 6px 14px;
+}
+.obj-awareness { background: var(--blue-dim); color: #2E6DA4; border: 1px solid var(--blue-border); }
+.obj-authority { background: var(--gold-dim); color: var(--gold); border: 1px solid var(--gold-border); }
+.obj-conversion { background: var(--green-dim); color: #1A6635; border: 1px solid var(--green-border); }
+.obj-humanization { background: var(--red-dim); color: var(--red); border: 1px solid var(--red-border); }
+
+/* ── CONTENT ITEMS ───────────────────────────── */
+.week-content { padding: 0 32px 28px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 20px; }
+
+.content-item { padding: 20px; border: 1px solid rgba(0,0,0,0.07); background: rgba(0,0,0,0.015); }
+.content-platform {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 12px;
+}
+.platform-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  flex-shrink: 0;
+}
+.dot-li { background: #0A66C2; }
+.dot-ig { background: #E1306C; }
+.dot-tt { background: #111; border: 1px solid rgba(0,0,0,0.2); }
+.dot-serie { background: var(--green); }
+
+.platform-name {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--muted);
+}
+.content-format {
+  font-size: 11px; color: rgba(0,0,0,0.25); margin-bottom: 8px;
+  font-weight: 500; letter-spacing: 1px;
+}
+.content-hook {
+  font-size: 14px; font-weight: 600; color: var(--dark2);
+  line-height: 1.45; margin-bottom: 8px;
+}
+.content-note {
+  font-size: 13px; color: var(--muted); line-height: 1.5;
+}
+.content-item.highlight-item {
+  background: var(--dark2); border-color: var(--dark2);
+}
+.highlight-item .platform-name { color: rgba(255,255,255,0.40); }
+.highlight-item .content-format { color: rgba(255,255,255,0.22); }
+.highlight-item .content-hook { color: #E8F5EC; }
+.highlight-item .content-note { color: rgba(255,255,255,0.40); }
+.highlight-item .platform-dot.dot-serie { background: var(--green); box-shadow: 0 0 6px rgba(78,201,122,0.5); }
+
+/* ── NORMA REF ───────────────────────────────── */
+.norma-ref {
+  margin: 0 32px 24px;
+  padding: 14px 20px;
+  border-left: 3px solid var(--green);
+  background: var(--green-dim);
+  display: flex; align-items: center; gap: 16px;
+}
+.norma-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #1A6635; margin-right: 4px; }
+.norma-text { font-size: 13px; color: var(--dark2); font-weight: 500; }
+
+/* ── MONTH DIVIDER ───────────────────────────── */
+.month-divider {
+  background: var(--dark2);
+  padding: 28px 64px;
+  display: flex; align-items: center; gap: 24px;
+}
+.divider-month {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px; font-weight: 700; color: rgba(255,255,255,0.08);
+  letter-spacing: -1px;
+}
+.divider-theme {
+  font-size: 13px; color: rgba(255,255,255,0.35);
+  letter-spacing: 2px; text-transform: uppercase;
+}
+.divider-sep { flex: 1; height: 1px; background: rgba(255,255,255,0.06); }
+
+/* ── LEGEND ──────────────────────────────────── */
+.legend-section {
+  background: white;
+  padding: 32px 64px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  display: flex; flex-wrap: wrap; gap: 32px; align-items: center;
+}
+.legend-title { font-size: 11px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: rgba(0,0,0,0.25); margin-right: 8px; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+/* ── OVERVIEW TABLE ──────────────────────────── */
+.overview-section { padding: 0 64px 48px; }
+.overview-title {
+  font-size: 12px; font-weight: 700; letter-spacing: 5px;
+  text-transform: uppercase; color: var(--muted);
+  padding: 28px 0 20px;
+}
+.overview-table { width: 100%; border-collapse: collapse; }
+.overview-table th {
+  text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: rgba(0,0,0,0.30);
+  padding: 12px 16px; border-bottom: 2px solid rgba(0,0,0,0.08);
+}
+.overview-table td {
+  padding: 14px 16px; border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size: 14px; color: var(--text); vertical-align: middle;
+}
+.overview-table tr:last-child td { border-bottom: none; }
+.overview-table tr:hover td { background: rgba(0,0,0,0.015); }
+.ot-week { font-weight: 600; color: var(--dark2); width: 80px; }
+.ot-dates { color: var(--muted); width: 120px; font-size: 13px; }
+.ot-theme { font-weight: 500; }
+.ot-pillar span {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; padding: 4px 10px;
+}
+.ot-obj span { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 4px 10px; }
+.overview-table .row-abril td { background: rgba(238,246,239,0.5); }
+.overview-table .row-maio td { background: rgba(255,255,255,1); }
+.month-row td { 
+  background: var(--dark2) !important;
+  color: rgba(255,255,255,0.35);
+  font-size: 11px; font-weight: 700; letter-spacing: 4px;
+  text-transform: uppercase; padding: 10px 16px !important;
+}
+
+@media (max-width: 900px) {
+  .site-header, .arc-section, .pillars-section, .tabs-nav, .weeks-container, .legend-section, .overview-section { padding-left: 24px; padding-right: 24px; }
+  .arc-grid { grid-template-columns: 1fr; }
+  .week-header { grid-template-columns: 80px 1fr; }
+  .week-objective { display: none; }
+  .week-content { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="site-header">
+  <div class="header-tag">Estratégia de Conteúdo · Alysson Sthurd</div>
+  <div class="header-title">
+    <em>Abril & Maio</em> — Dois meses<br>com propósito.
+  </div>
+  <div class="header-sub">
+    Pauta estratégica construída em arco narrativo, com pilares temáticos, distribuição por plataforma e objetivo claro em cada semana.
+  </div>
+  <div class="header-meta">
+    <div class="meta-item">
+      <div class="meta-label">Período</div>
+      <div class="meta-value"><strong>01 Abr → 31 Mai 2026</strong></div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Semanas</div>
+      <div class="meta-value"><strong>9 semanas</strong></div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Plataformas</div>
+      <div class="meta-value">LinkedIn · Instagram · TikTok</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Formato âncora</div>
+      <div class="meta-value">Série visual + texto + vídeo</div>
+    </div>
+  </div>
+</div>
+
+<!-- ARCO NARRATIVO -->
+<div class="arc-section">
+  <div class="arc-title">Arco Narrativo dos Dois Meses</div>
+  <div class="arc-grid">
+    <div class="arc-card">
+      <div class="arc-month">Abril</div>
+      <div class="arc-theme">"O que você não sabe<br>que não sabe."</div>
+      <div class="arc-desc">Revelar direitos ocultos, comportamentos que prejudicam, e o que o mercado esconde. Posicionar Alysson como quem ilumina o que está na sombra — sem alarme, com autoridade.</div>
+    </div>
+    <div class="arc-card">
+      <div class="arc-month">Maio</div>
+      <div class="arc-theme">"A decisão certa<br>no momento certo."</div>
+      <div class="arc-desc">Urgência regulatória, janelas que fecham, e o custo de esperar. Converter o posicionamento de autoridade construído em abril em conversa, consulta e relacionamento real.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PILARES -->
+<div class="pillars-section">
+  <div class="pillars-title">Pilares Temáticos</div>
+  <div class="pillars-row">
+    <div class="pillar-badge p-reg">⚖ Regulatório · Direitos</div>
+    <div class="pillar-badge p-beh">🧠 Comportamento · Psicologia</div>
+    <div class="pillar-badge p-b2b">🏢 B2B · RH & Benefícios</div>
+    <div class="pillar-badge p-hum">🤝 Humanização · Histórias</div>
+    <div class="pillar-badge p-pos">📌 Posicionamento · Marca Pessoal</div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-nav">
+  <button class="tab-btn active" onclick="showTab('visao')">Visão Geral</button>
+  <button class="tab-btn" onclick="showTab('abril')">Abril</button>
+  <button class="tab-btn" onclick="showTab('maio')">Maio</button>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- TAB: VISÃO GERAL -->
+<!-- ════════════════════════════════════════════ -->
+<div id="tab-visao" class="month-section active">
+  <div class="overview-section">
+    <div class="overview-title">Mapa Completo — 9 Semanas</div>
+    <table class="overview-table">
+      <thead>
+        <tr>
+          <th class="ot-week">Sem.</th>
+          <th class="ot-dates">Período</th>
+          <th class="ot-theme">Tema Central</th>
+          <th>Pilar</th>
+          <th>Objetivo</th>
+          <th>Âncora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="month-row"><td colspan="6">ABRIL — "O que você não sabe que não sabe"</td></tr>
+
+        <tr class="row-abril">
+          <td class="ot-week">01</td>
+          <td class="ot-dates">31/03 – 05/04</td>
+          <td class="ot-theme">Portabilidade — a saída que ninguém usa</td>
+          <td class="ot-pillar"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">⚖ Regulatório</span></td>
+          <td class="ot-obj"><span style="background:rgba(46,109,164,0.10);color:#2E6DA4;">Consciência</span></td>
+          <td>Post 05 da Série Visual</td>
+        </tr>
+        <tr class="row-abril">
+          <td class="ot-week">02</td>
+          <td class="ot-dates">07/04 – 12/04</td>
+          <td class="ot-theme">O viés que te prende num plano ruim</td>
+          <td class="ot-pillar"><span style="background:rgba(46,109,164,0.10);color:#2E6DA4;">🧠 Comportamento</span></td>
+          <td class="ot-obj"><span style="background:rgba(184,137,42,0.10);color:#9A6E15;">Autoridade</span></td>
+          <td>LinkedIn Longo + Reels</td>
+        </tr>
+        <tr class="row-abril">
+          <td class="ot-week">03</td>
+          <td class="ot-dates">14/04 – 19/04</td>
+          <td class="ot-theme">O que o benefício diz sobre a empresa</td>
+          <td class="ot-pillar"><span style="background:rgba(184,137,42,0.10);color:#9A6E15;">🏢 B2B / RH</span></td>
+          <td class="ot-obj"><span style="background:rgba(184,137,42,0.10);color:#9A6E15;">Autoridade</span></td>
+          <td>Post 06 da Série + LinkedIn</td>
+        </tr>
+        <tr class="row-abril">
+          <td class="ot-week">04</td>
+          <td class="ot-dates">22/04 – 26/04</td>
+          <td class="ot-theme">Humanização — bastidores reais</td>
+          <td class="ot-pillar"><span style="background:rgba(180,60,30,0.08);color:#B43C1E;">🤝 Humanização</span></td>
+          <td class="ot-obj"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">Conversão</span></td>
+          <td>Reels + Stories + LinkedIn</td>
+        </tr>
+
+        <tr class="month-row"><td colspan="6">MAIO — "A decisão certa no momento certo"</td></tr>
+
+        <tr class="row-maio">
+          <td class="ot-week">05</td>
+          <td class="ot-dates">28/04 – 03/05</td>
+          <td class="ot-theme">DLP — a armadilha que pega todo mundo</td>
+          <td class="ot-pillar"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">⚖ Regulatório</span></td>
+          <td class="ot-obj"><span style="background:rgba(46,109,164,0.10);color:#2E6DA4;">Consciência</span></td>
+          <td>Post 07 da Série Visual</td>
+        </tr>
+        <tr class="row-maio">
+          <td class="ot-week">06</td>
+          <td class="ot-dates">05/05 – 10/05</td>
+          <td class="ot-theme">O que muda em 2026 — urgência regulatória</td>
+          <td class="ot-pillar"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">⚖ Regulatório</span></td>
+          <td class="ot-obj"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">Conversão</span></td>
+          <td>LinkedIn + Carrossel + TikTok</td>
+        </tr>
+        <tr class="row-maio">
+          <td class="ot-week">07</td>
+          <td class="ot-dates">12/05 – 17/05</td>
+          <td class="ot-theme">Reajuste — o que pode ser ilegal</td>
+          <td class="ot-pillar"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">⚖ Regulatório</span></td>
+          <td class="ot-obj"><span style="background:rgba(184,137,42,0.10);color:#9A6E15;">Autoridade</span></td>
+          <td>Post 08 da Série + LinkedIn</td>
+        </tr>
+        <tr class="row-maio">
+          <td class="ot-week">08</td>
+          <td class="ot-dates">19/05 – 24/05</td>
+          <td class="ot-theme">Por que Alysson — diferencial e voz</td>
+          <td class="ot-pillar"><span style="background:rgba(0,0,0,0.04);color:rgba(0,0,0,0.40);">📌 Posicionamento</span></td>
+          <td class="ot-obj"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">Conversão</span></td>
+          <td>Reels humanização + LinkedIn</td>
+        </tr>
+        <tr class="row-maio">
+          <td class="ot-week">09</td>
+          <td class="ot-dates">26/05 – 31/05</td>
+          <td class="ot-theme">Fechamento — convite à conversa</td>
+          <td class="ot-pillar"><span style="background:rgba(0,0,0,0.04);color:rgba(0,0,0,0.40);">📌 Posicionamento</span></td>
+          <td class="ot-obj"><span style="background:rgba(78,201,122,0.10);color:#1A6635;">Conversão</span></td>
+          <td>Stories + LinkedIn fechamento</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="legend-section">
+    <span class="legend-title">Plataformas</span>
+    <div class="legend-item"><div class="legend-dot" style="background:#0A66C2;"></div> LinkedIn</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#E1306C;"></div> Instagram</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#111;"></div> TikTok</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#4EC97A;"></div> Série Visual (Post HTML)</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- TAB: ABRIL -->
+<!-- ════════════════════════════════════════════ -->
+<div id="tab-abril" class="month-section">
+
+  <div class="month-divider">
+    <div class="divider-month">Abril 2026</div>
+    <div class="divider-sep"></div>
+    <div class="divider-theme">"O que você não sabe que não sabe"</div>
+  </div>
+
+  <div class="weeks-container">
+
+    <!-- SEMANA 01 -->
+    <div class="week-card reg">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">01</div>
+          <div class="week-dates">31/03 – 05/04</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">⚖ Regulatório · Direitos</div>
+          <div class="week-theme">Portabilidade — a saída que quase ninguém usa</div>
+          <div class="week-intent">Revelar um direito real que a maioria desconhece. Criar o senso de que existe alternativa — e que Alysson é quem abre essa porta.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-awareness">Consciência</div>
+        </div>
+      </div>
+      <div class="norma-ref">
+        <span class="norma-label">Base:</span>
+        <span class="norma-text">RN nº 438/2018 · Portabilidade de carências · Sem nova carência ao migrar para plano de igual ou superior cobertura</span>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-serie"></div>
+            <div class="platform-name">Série Visual</div>
+          </div>
+          <div class="content-format">Post 05 — HTML 1080×1080</div>
+          <div class="content-hook">Você pode trocar de plano. Sem perder carência.</div>
+          <div class="content-note">Âncora visual da semana. Formato dos posts 01-04. Embasamento: RN 438/2018. Visual: dark + accent green.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto longo · 700-900 caracteres</div>
+          <div class="content-hook">"A maioria das pessoas fica presa num plano ruim porque acha que trocar significa começar do zero."</div>
+          <div class="content-note">Abertura com dor do leitor. Explica portabilidade em linguagem de gestor. CTA leve: "me manda teu plano atual."</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram · TikTok</div>
+          </div>
+          <div class="content-format">Reels · 40-55s · Talking head</div>
+          <div class="content-hook">Hook: "Você sabia que pode trocar de plano de saúde sem perder a carência que já cumpriu?"</div>
+          <div class="content-note">Didático, rápido. 3 condições para portabilidade. CTA: salva e manda pra quem precisa saber.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 02 -->
+    <div class="week-card beh">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">02</div>
+          <div class="week-dates">07/04 – 12/04</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">🧠 Comportamento · Psicologia</div>
+          <div class="week-theme">O viés que te prende num plano que não te serve</div>
+          <div class="week-intent">Nomear o comportamento — não criticar. Usar a psicologia da decisão para fazer o leitor se enxergar. Diferencial intelectual de Alysson.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-authority">Autoridade</div>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto conceitual · 900-1200 caracteres</div>
+          <div class="content-hook">"Tem um nome para o motivo pelo qual você continua pagando por um plano que sabe que é ruim. Chama-se falácia do custo irrecuperável."</div>
+          <div class="content-note">Aplica o conceito ao plano de saúde. Sem academicismo. Tom: provocador, empático. Referência possível: Kahneman/Thaler sem citar o nome.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram</div>
+          </div>
+          <div class="content-format">Carrossel · 6-7 slides</div>
+          <div class="content-hook">Capa: "5 sinais de que você está pagando por um plano que não te serve"</div>
+          <div class="content-note">Cada slide = um sinal. Último slide: CTA para DM. Tom: espelho, não julgamento. Faz o leitor se reconhecer.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-tt"></div>
+            <div class="platform-name">TikTok · Reels</div>
+          </div>
+          <div class="content-format">Vídeo curto · 30-40s</div>
+          <div class="content-hook">Hook: "O maior erro de quem contrata plano de saúde não é escolher o plano errado. É continuar nele."</div>
+          <div class="content-note">Rápido, virada no final. Leve referência comportamental sem jargão. CTA: "você continua por qual motivo?"</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 03 -->
+    <div class="week-card b2b">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">03</div>
+          <div class="week-dates">14/04 – 19/04</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">🏢 B2B · RH & Benefícios</div>
+          <div class="week-theme">O benefício que a empresa oferece diz quem ela é</div>
+          <div class="week-intent">Falar com decisores B2B — RH, gestores de tech. A semana mais voltada para LinkedIn. O plano como sinal de cultura e intenção, não produto.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-authority">Autoridade</div>
+        </div>
+      </div>
+      <div class="norma-ref">
+        <span class="norma-label">Contexto:</span>
+        <span class="norma-text">Pool de risco (norma em elaboração) + RN 566/2023 · Reajuste coletivo · Janela de negociação antes da publicação</span>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-serie"></div>
+            <div class="platform-name">Série Visual</div>
+          </div>
+          <div class="content-format">Post 06 — HTML 1080×1080</div>
+          <div class="content-hook">A norma que vai tirar o poder de negociação da sua empresa. E o que fazer antes.</div>
+          <div class="content-note">Continuação do Post 01 (pool de risco) com mais profundidade. Audiência: RH/DP. Urgência: janela antes da publicação DOU.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto narrativo · 800-1000 caracteres</div>
+          <div class="content-hook">"Quando um dev sai da empresa por causa do benefício, ninguém escreve isso na carta de demissão. Mas é o que acontece."</div>
+          <div class="content-note">Série "Bastidores do Benefício" — Post 1. Dado de rotatividade + custo de substituição. Tom: gestora de RH reconhece a dor.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram</div>
+          </div>
+          <div class="content-format">Carrossel · 5 slides</div>
+          <div class="content-hook">Capa: "Por que o plano de saúde virou diferencial de retenção em 2026"</div>
+          <div class="content-note">Dados de mercado + lógica do employer branding. Tom mais acessível que LinkedIn. CTA: "sua empresa sabe o que está comunicando com o plano atual?"</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 04 -->
+    <div class="week-card hum">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">04</div>
+          <div class="week-dates">22/04 – 26/04</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">🤝 Humanização · Bastidores</div>
+          <div class="week-theme">O lado que ninguém mostra — Alysson por dentro</div>
+          <div class="week-intent">Quebrar o ritmo técnico. Trazer o humano. Histórias reais (sem expor clientes), bastidores do dia a dia. Quem é Alysson além do regulatório.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-conversion">Conversão</div>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Narrativa pessoal · 700-900 caracteres</div>
+          <div class="content-hook">"Às 21h de uma quarta-feira, recebi uma mensagem: 'O plano negou. O médico disse que não tem tempo.' Isso não é incomum. É o que me faz levantar todo dia."</div>
+          <div class="content-note">Caso real anonimizado. Foco na resolução, não no drama. Mostra competência + empatia. Não é motivacional — é concreto.</div>
+        </div>
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram · TikTok</div>
+          </div>
+          <div class="content-format">Reels · 45-60s · Talking head</div>
+          <div class="content-hook">Hook: "Me ligaram às 22h. O plano tinha negado uma cobertura urgente. Isso é o que eu fiz."</div>
+          <div class="content-note">Narrativa em 3 partes: situação → ação → resultado. Tom: calmo, competente. Não herói. Profissional que conhece o caminho.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram Stories</div>
+          </div>
+          <div class="content-format">Sequência de Stories · 5-7 telas</div>
+          <div class="content-hook">Bastidores: "como é um dia atendendo clientes de planos de saúde em Brasília"</div>
+          <div class="content-note">Mais informal. Foto/vídeo curto de cada momento. CTA final: caixinha de perguntas — "me manda sua dúvida sobre plano de saúde".</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /weeks-container -->
+</div><!-- /tab-abril -->
+
+<!-- ════════════════════════════════════════════ -->
+<!-- TAB: MAIO -->
+<!-- ════════════════════════════════════════════ -->
+<div id="tab-maio" class="month-section">
+
+  <div class="month-divider">
+    <div class="divider-month">Maio 2026</div>
+    <div class="divider-sep"></div>
+    <div class="divider-theme">"A decisão certa no momento certo"</div>
+  </div>
+
+  <div class="weeks-container">
+
+    <!-- SEMANA 05 -->
+    <div class="week-card reg">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">05</div>
+          <div class="week-dates">28/04 – 03/05</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">⚖ Regulatório · Direitos</div>
+          <div class="week-theme">DLP — a armadilha que pega todo mundo na hora errada</div>
+          <div class="week-intent">Desmistificar a Doença/Lesão Preexistente. Um dos temas mais mal explicados do mercado. Alysson como quem traduz o que a seguradora não vai te contar.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-awareness">Consciência</div>
+        </div>
+      </div>
+      <div class="norma-ref">
+        <span class="norma-label">Base:</span>
+        <span class="norma-text">RN nº 558/2022 · DLP e DPS · Declaração de Saúde · Cobertura parcial temporária · Prazos e exceções</span>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-serie"></div>
+            <div class="platform-name">Série Visual</div>
+          </div>
+          <div class="content-format">Post 07 — HTML 1080×1080</div>
+          <div class="content-hook">Você declarou a doença errado. Ou não declarou. Nos dois casos, pode ser um problema.</div>
+          <div class="content-note">Tema: DLP, cobertura parcial temporária, o que a operadora pode e não pode fazer. Embasamento: RN 558/2022.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto educativo · 700-900 caracteres</div>
+          <div class="content-hook">"DLP não é uma punição. É um mecanismo. Quando você entende como funciona, para de temer — e começa a usar a seu favor."</div>
+          <div class="content-note">Desconstrói o medo sem minimizar. Explica o que pode acontecer e o que não podem fazer. Tom: autoridade com empatia.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-tt"></div>
+            <div class="platform-name">TikTok · Reels</div>
+          </div>
+          <div class="content-format">Vídeo · 45-55s</div>
+          <div class="content-hook">Hook: "Se você tem qualquer doença crônica e quer contratar um plano, assiste isso antes de assinar qualquer coisa."</div>
+          <div class="content-note">3 coisas que toda pessoa com DLP precisa saber. Linguagem direta, zero juridiquês. CTA: salva esse vídeo.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 06 -->
+    <div class="week-card reg">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">06</div>
+          <div class="week-dates">05/05 – 10/05</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">⚖ Regulatório · Urgência 2026</div>
+          <div class="week-theme">O que muda no mercado em 2026 — e o que você pode fazer agora</div>
+          <div class="week-intent">Semana de urgência regulatória. Converter autoridade em ação. O leitor já confia — agora precisa entender que o tempo importa.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-conversion">Conversão</div>
+        </div>
+      </div>
+      <div class="norma-ref">
+        <span class="norma-label">Base:</span>
+        <span class="norma-text">Agenda Regulatória ANS 2026-2028 · Pool de risco · Reajuste individual · Normas em elaboração</span>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto de urgência · 800-1000 caracteres</div>
+          <div class="content-hook">"Existem três normas em elaboração na ANS agora mesmo que vão mudar as regras do jogo. Uma delas afeta direto a empresa que você gere."</div>
+          <div class="content-note">Específico, sem alarmismo. Nomeia as mudanças. Posiciona Alysson como quem acompanha isso em tempo real. CTA para conversa.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram</div>
+          </div>
+          <div class="content-format">Carrossel · 6 slides</div>
+          <div class="content-hook">Capa: "3 mudanças que a ANS está aprovando agora — e que te afetam diretamente"</div>
+          <div class="content-note">Pool de risco · Reajuste individual extra · Portabilidade com novas regras. Um por slide. Claro, sem pânico. CTA: "quer entender como isso te afeta?"</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-tt"></div>
+            <div class="platform-name">TikTok</div>
+          </div>
+          <div class="content-format">Vídeo · 30-40s · Urgente</div>
+          <div class="content-hook">Hook: "A ANS está mudando as regras dos planos de saúde agora. Você ainda não sabe?"</div>
+          <div class="content-note">Rápido, impactante. 2-3 pontos. Não sensacionalista — factual com ritmo. CTA: link na bio para conversar.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 07 -->
+    <div class="week-card reg">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">07</div>
+          <div class="week-dates">12/05 – 17/05</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">⚖ Regulatório · Transparência</div>
+          <div class="week-theme">Reajuste — o que aumenta é legal. O que é cobrado nem sempre.</div>
+          <div class="week-intent">Tema de alto engajamento. Todos recebem reajuste, poucos entendem. Alysson como quem sabe distinguir o legal do abusivo — e age.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-authority">Autoridade</div>
+        </div>
+      </div>
+      <div class="norma-ref">
+        <span class="norma-label">Base:</span>
+        <span class="norma-text">Lei 9.656/98 art. 15, §3º · RN 171/2008 (individual) · RN 566/2023 (coletivo) · Reajuste faixa etária vedado após 60 anos/10 anos</span>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-serie"></div>
+            <div class="platform-name">Série Visual</div>
+          </div>
+          <div class="content-format">Post 08 — HTML 1080×1080</div>
+          <div class="content-hook">Reajuste anual — o que é previsto, o que é regulado, e o que pode ser ilegal.</div>
+          <div class="content-note">Complementa o Post 02 (faixa etária) com visão mais ampla. Individual vs. coletivo. Reajuste permitido vs. vedado.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto técnico-acessível · 700 caracteres</div>
+          <div class="content-hook">"Seu plano aumentou. A pergunta não é 'por quê'. É 'esse aumento está dentro do que a lei permite?'"</div>
+          <div class="content-note">Divide: reajuste regulado pela ANS (individual) vs. coletivo sem teto. Explica faixa etária vedada. CTA: "me manda sua fatura."</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram</div>
+          </div>
+          <div class="content-format">Carrossel · 7 slides</div>
+          <div class="content-hook">Capa: "Seu plano aumentou X%. É normal? Depende. Aqui está o que eu verifico."</div>
+          <div class="content-note">Checklist visual. O que verifica, por quê, o que pode ser contestado. Tom: prático, parceiro. Último slide: "me manda a fatura, analiso com você."</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 08 -->
+    <div class="week-card pos">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">08</div>
+          <div class="week-dates">19/05 – 24/05</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">📌 Posicionamento · Marca Pessoal</div>
+          <div class="week-theme">Por que Alysson — diferencial que nenhum corretor oferece</div>
+          <div class="week-intent">Não autopromocional. Uma semana de conversas sobre o que Alysson faz de diferente — sem dizer que é diferente. Mostrar, não declarar.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-conversion">Conversão</div>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto reflexivo · 800-1000 caracteres</div>
+          <div class="content-hook">"O que eu aprendi nesses 2 meses produzindo conteúdo sobre um mercado que a maioria acha chato."</div>
+          <div class="content-note">Honesto, autoconsciente. Fala de quem chegou, o que perguntaram, o que descobriu. Posiciona sem vender. CTA orgânico à conversa.</div>
+        </div>
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram · TikTok</div>
+          </div>
+          <div class="content-format">Reels · 60s · Humanização</div>
+          <div class="content-hook">Hook contraintuitivo: "Eu não vendo plano de saúde. Esse não é meu trabalho."</div>
+          <div class="content-note">Explica o que faz de fato. Consultoria, análise, defesa do cliente. Diferencial real vs. corretor genérico. Tom: calmo, seguro, sem forçar.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram Stories</div>
+          </div>
+          <div class="content-format">Série de Stories · Enquete + caixinha</div>
+          <div class="content-hook">"Você já entendeu de verdade o que está contratando?" + caixinha: "me faz a pergunta que você nunca teve coragem de fazer sobre plano de saúde"</div>
+          <div class="content-note">Gera DMs. Responde nos Stories. Humanização + autoridade + CTA natural. As perguntas viram pauta para junho.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMANA 09 -->
+    <div class="week-card pos">
+      <div class="week-header">
+        <div class="week-num-block">
+          <div class="week-num">09</div>
+          <div class="week-dates">26/05 – 31/05</div>
+        </div>
+        <div class="week-info">
+          <div class="week-pillar-tag">📌 Fechamento de Ciclo</div>
+          <div class="week-theme">A conversa que você está adiando</div>
+          <div class="week-intent">Encerramento dos dois meses. CTA direto, não agressivo. O convite que faz sentido porque a autoridade foi construída nas 8 semanas anteriores.</div>
+        </div>
+        <div class="week-objective">
+          <div class="obj-label">Objetivo</div>
+          <div class="obj-value obj-conversion">Conversão</div>
+        </div>
+      </div>
+      <div class="week-content">
+        <div class="content-item highlight-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-li"></div>
+            <div class="platform-name">LinkedIn</div>
+          </div>
+          <div class="content-format">Texto de fechamento · 600-700 caracteres</div>
+          <div class="content-hook">"Nos últimos dois meses falei sobre portabilidade, DLP, reajuste ilegal, demissão e o que vem por aí. Tudo isso para dizer uma coisa: a informação sozinha não resolve. A decisão resolve."</div>
+          <div class="content-note">Recapitula o arco dos 2 meses. Convida para conversa sem forçar. Tom: maduro, generoso. CTA natural: "se algum desses temas te tocou, me chama."</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-ig"></div>
+            <div class="platform-name">Instagram Stories</div>
+          </div>
+          <div class="content-format">CTA Stories · 3-4 telas</div>
+          <div class="content-hook">Tela 1: "Você me acompanhou nesses 2 meses. Obrigado." / Tela 2: "Se ainda não conversamos, pode ser agora." / Tela 3: Link WhatsApp + frase.</div>
+          <div class="content-note">Simples. Direto. Não forçado. A audiência já está aquecida — o CTA é só a porta aberta.</div>
+        </div>
+        <div class="content-item">
+          <div class="content-platform">
+            <div class="platform-dot dot-tt"></div>
+            <div class="platform-name">TikTok · Reels</div>
+          </div>
+          <div class="content-format">Vídeo reflexivo · 40-50s</div>
+          <div class="content-hook">Hook: "Encerro esses dois meses com a pergunta que mais recebi: por onde eu começo?"</div>
+          <div class="content-note">Responde a pergunta de forma simples. 3 passos concretos. CTA: "me chama no WhatsApp, começa aí." Teaser sutil do próximo ciclo.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /weeks-container -->
+</div><!-- /tab-maio -->
+
+<div class="legend-section">
+  <span class="legend-title">Plataformas</span>
+  <div class="legend-item"><div class="legend-dot" style="background:#0A66C2;"></div> LinkedIn</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#E1306C;"></div> Instagram</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#111;border:1px solid #ccc;"></div> TikTok</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4EC97A;"></div> Série Visual</div>
+  &nbsp;&nbsp;&nbsp;
+  <span class="legend-title">Objetivos</span>
+  <div class="legend-item"><div class="legend-dot" style="background:#2E6DA4;"></div> Consciência</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#B8892A;"></div> Autoridade</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4EC97A;"></div> Conversão</div>
+</div>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.month-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
