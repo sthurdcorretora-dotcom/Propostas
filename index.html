@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix Seguros — Proteção com Confiança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <div class="logo-wrap">
+        <img src="Captura de tela 2026-04-29 225134.png" alt="Felix Seguros" class="logo-img" />
+        <span class="logo-text">Felix Seguros</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Planos de Saúde</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="https://wa.me/5561981346835" class="btn btn-outline nav-cta" target="_blank">Falar com Consultor</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos de Saúde</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5561981346835" class="btn btn-gold" target="_blank">Falar com Consultor</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-scene" id="heroScene" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Corretora de Seguros</div>
+      <h1 class="hero-title">
+        Proteção que você<br />
+        <span class="gold-text">pode confiar.</span>
+      </h1>
+      <p class="hero-sub">
+        Seguros personalizados para cada fase da sua vida — saúde, vida, automóvel,<br class="hide-mob" />
+        residência e muito mais. Atendimento próximo, soluções inteligentes.
+      </p>
+      <div class="hero-actions">
+        <a href="#planos" class="btn btn-gold">Ver Planos de Saúde</a>
+        <a href="#contato" class="btn btn-outline-light">Solicitar Cotação</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">+1.000</span>
+          <span class="stat-label">Clientes protegidos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">+15</span>
+          <span class="stat-label">Seguradoras parceiras</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Anos de experiência</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Rolar para baixo</span>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== RAMOS / SERVIÇOS ===== -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Ramos de Seguros</h2>
+        <p class="section-sub">Cobertura completa para proteger você, sua família e seu patrimônio em qualquer situação.</p>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="19" y="7" width="10" height="34" rx="3" stroke="currentColor" stroke-width="2"/>
+              <rect x="7" y="19" width="34" height="10" rx="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Plano de Saúde</h3>
+          <p>Acesso aos melhores planos individuais, familiares e empresariais com a melhor cobertura do mercado.</p>
+          <a href="#planos" class="card-link">Saiba mais →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 6L8 14v12c0 9 7.2 17.4 16 20 8.8-2.6 16-11 16-20V14L24 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M17 24l4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Seguro de Vida</h3>
+          <p>Garanta o futuro de quem você ama com coberturas de morte, invalidez e doenças graves.</p>
+          <a href="#contato" class="card-link">Solicitar cotação →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M6 24L24 8L42 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 20v20h10V30h8v10h10V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Seguro Residencial</h3>
+          <p>Proteção completa para sua casa: incêndio, roubo, danos elétricos, responsabilidade civil e muito mais.</p>
+          <a href="#contato" class="card-link">Solicitar cotação →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="20" width="40" height="18" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 20v-4a4 4 0 018 0v4M28 20v-4a4 4 0 018 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="13" cy="38" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="35" cy="38" r="4" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Seguro Auto</h3>
+          <p>Cobertura total ou parcial para seu veículo: colisão, roubo, terceiros, carro reserva e assistência 24h.</p>
+          <a href="#contato" class="card-link">Solicitar cotação →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="10" y="6" width="28" height="38" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M17 14h4M27 14h4M17 22h4M27 22h4M17 30h4M27 30h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M21 44V36h6v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Seguro Empresarial</h3>
+          <p>Soluções completas para proteger seu negócio: patrimônio, responsabilidade civil e lucros cessantes.</p>
+          <a href="#contato" class="card-link">Solicitar cotação →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 4 L22 22 L8 30 L8 34 L22 30 L22 39 L18 42 L18 45 L24 43 L30 45 L30 42 L26 39 L26 30 L40 34 L40 30 L26 22 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Seguro Viagem</h3>
+          <p>Viaje com tranquilidade. Cobertura médica, extravio de bagagem, cancelamento de voo e assistência global.</p>
+          <a href="#contato" class="card-link">Solicitar cotação →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLANOS DE SAÚDE ===== -->
+  <section class="section section-dark" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-gold">Planos de Saúde</span>
+        <h2 class="section-title light">Encontre o plano ideal para você</h2>
+        <p class="section-sub light">Trabalhamos com as maiores operadoras do Brasil para oferecer o melhor custo-benefício.</p>
+      </div>
+
+      <!-- Visual de família -->
+      <div class="plans-family-strip">
+        <div class="plans-family-text">
+          <h3>Cuide de quem você ama</h3>
+          <p>Um plano de saúde completo é o maior presente que você pode dar à sua família. Encontre a cobertura ideal para cada fase da vida — da criança ao adulto.</p>
+        </div>
+        <div class="plans-family-img">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Família feliz com plano de saúde" />
+        </div>
+      </div>
+
+      <div class="plans-grid">
+
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-badge">Individual</span>
+            <h3>Para você</h3>
+            <p>Cuidado completo com sua saúde, sem depender de plano coletivo.</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Consultas em clínicas e hospitais</li>
+            <li><span class="check">✓</span> Exames laboratoriais</li>
+            <li><span class="check">✓</span> Internações e cirurgias</li>
+            <li><span class="check">✓</span> Pronto-socorro 24h</li>
+            <li><span class="check">✓</span> Telemedicina inclusa</li>
+          </ul>
+          <a href="#contato" class="btn btn-gold full-w">Quero este plano</a>
+        </div>
+
+        <div class="plan-card plan-featured">
+          <div class="plan-badge-top">Mais Escolhido</div>
+          <div class="plan-header">
+            <span class="plan-badge">Familiar</span>
+            <h3>Para sua família</h3>
+            <p>Um único plano que cobre toda a família com cobertura ampliada.</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Todos os benefícios individuais</li>
+            <li><span class="check">✓</span> Até 6 dependentes</li>
+            <li><span class="check">✓</span> Pediatria especializada</li>
+            <li><span class="check">✓</span> Maternidade completa</li>
+            <li><span class="check">✓</span> Cobertura odontológica</li>
+            <li><span class="check">✓</span> Psicologia e nutrição</li>
+          </ul>
+          <a href="#contato" class="btn btn-gold full-w">Quero este plano</a>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-badge">Empresarial</span>
+            <h3>Para sua empresa</h3>
+            <p>Atraia e retenha talentos com um benefício de saúde de qualidade.</p>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> A partir de 2 vidas</li>
+            <li><span class="check">✓</span> Rede credenciada ampla</li>
+            <li><span class="check">✓</span> Cobertura nacional</li>
+            <li><span class="check">✓</span> Gestão de benefícios</li>
+            <li><span class="check">✓</span> Reembolso de consultas</li>
+          </ul>
+          <a href="#contato" class="btn btn-gold full-w">Quero este plano</a>
+        </div>
+
+      </div>
+
+      <div class="operadoras">
+        <p class="operadoras-title">Seguradoras &amp; Operadoras Parceiras</p>
+      </div>
+    </div>
+
+    <!-- Carrossel de seguradoras (full-bleed) -->
+    <div class="brand-marquee" aria-label="Seguradoras parceiras">
+      <div class="marquee-fade marquee-fade-left"></div>
+      <div class="marquee-fade marquee-fade-right"></div>
+      <div class="marquee-track">
+        <!-- Track 1 -->
+        <div class="brand-chip"><img src="logos/allianz.png"      alt="Allianz" /></div>
+        <div class="brand-chip"><img src="logos/amil.png"         alt="Amil" /></div>
+        <div class="brand-chip"><img src="logos/azul.png"         alt="Azul Seguros" /></div>
+        <div class="brand-chip portrait"><img src="logos/bradesco.png" alt="Bradesco" /></div>
+        <div class="brand-chip"><img src="logos/ezze.png"         alt="EZZE Seguros" /></div>
+        <div class="brand-chip"><img src="logos/mapfre.png"       alt="MAPFRE" /></div>
+        <div class="brand-chip"><img src="logos/porto-seguro.png" alt="Porto Seguro" /></div>
+        <div class="brand-chip"><img src="logos/pottencial.png"   alt="Pottencial Seguradora" /></div>
+        <div class="brand-chip"><img src="logos/unimed.png"       alt="Seguros Unimed" /></div>
+        <div class="brand-chip"><img src="logos/suhai.png"        alt="Suhai Seguradora" /></div>
+        <div class="brand-chip"><img src="logos/sulamerica.png"   alt="SulAmérica" /></div>
+        <div class="brand-chip"><img src="logos/tokio-marine.jpeg" alt="Tokio Marine" /></div>
+        <div class="brand-chip portrait"><img src="logos/zurich.jpg" alt="Zurich" /></div>
+
+        <!-- Track 2 (duplicado para loop contínuo) -->
+        <div class="brand-chip" aria-hidden="true"><img src="logos/allianz.png"      alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/amil.png"         alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/azul.png"         alt="" /></div>
+        <div class="brand-chip portrait" aria-hidden="true"><img src="logos/bradesco.png" alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/ezze.png"         alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/mapfre.png"       alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/porto-seguro.png" alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/pottencial.png"   alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/unimed.png"       alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/suhai.png"        alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/sulamerica.png"   alt="" /></div>
+        <div class="brand-chip" aria-hidden="true"><img src="logos/tokio-marine.jpeg" alt="" /></div>
+        <div class="brand-chip portrait" aria-hidden="true"><img src="logos/zurich.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="container">
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="section section-light" id="sobre">
+    <div class="container">
+      <div class="diff-layout">
+        <div class="diff-text">
+          <span class="section-tag">Por que a Felix Seguros?</span>
+          <h2 class="section-title">Mais que uma corretora.<br /><span class="gold-text">Um parceiro de confiança.</span></h2>
+          <p class="diff-desc">Desde o primeiro atendimento até o momento do sinistro, estamos ao seu lado — com agilidade, transparência e cuidado genuíno.</p>
+          <div class="diff-items">
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M16 3L4 9v8c0 6 5.1 11.6 12 13.3C23 28.6 28 23 28 17V9L16 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 16l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Assessoria Independente</h4>
+                <p>Trabalhamos com múltiplas seguradoras e sempre recomendamos o que é melhor para você, não para nós.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h4>Atendimento Ágil</h4>
+                <p>Cotação em até 60 minutos e suporte rápido em caso de sinistro — quando mais você precisa, estamos lá.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M4 16c0-7 5.4-12 12-12s12 5 12 12-5.4 12-12 12S4 23 4 16z" stroke="currentColor" stroke-width="2"/><path d="M12 13c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" stroke="currentColor" stroke-width="2"/><path d="M6 26c1-3 5-5 10-5s9 2 10 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h4>Relacionamento Personalizado</h4>
+                <p>Um consultor dedicado que conhece sua história e antecipa suas necessidades de proteção.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contato" class="btn btn-navy">Falar com um Consultor</a>
+        </div>
+        <div class="diff-visual">
+          <div class="diff-card-float">
+            <div class="deise-photo-wrap">
+              <img src="deise.jpeg" alt="Deise Felix — Consultora de Seguros" class="deise-photo" />
+            </div>
+            <div class="deise-info">
+              <strong class="deise-name">Deise Felix</strong>
+              <span class="deise-role">Consultora de Seguros · Felix Seguros</span>
+            </div>
+            <div class="float-stats">
+              <div class="float-stat">
+                <span class="float-num">98%</span>
+                <span class="float-label">Satisfação dos clientes</span>
+              </div>
+              <div class="float-stat">
+                <span class="float-num">60min</span>
+                <span class="float-label">Prazo médio de cotação</span>
+              </div>
+            </div>
+          </div>
+          <div class="diff-orb diff-orb-1"></div>
+          <div class="diff-orb diff-orb-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que nossos clientes dizem</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial-top">
+            <div class="stars">★★★★★</div>
+            <div class="google-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+          <p>"A Felix Corretora, na figura da senhora Deise, tem me prestado serviços de excelência na área de seguros, principalmente para veículos, tendo me atendido e orientado nos últimos 5 anos, sempre com a máxima presteza e eficiência. Ela orienta, fornece consultoria para a melhor decisão, sempre com dedicação e cuidado no atendimento. Indico a todos a ter essa experiência de parceria."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">NF</div>
+            <div>
+              <strong>Nilton Fernandes</strong>
+              <span>Seguro Auto · 5 meses atrás</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-top">
+            <div class="stars">★★★★★</div>
+            <div class="google-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+          <p>"Recomendo a Félix Corretora de Seguros e, em especial, o trabalho da Deise! O atendimento é realmente personalizado e de alta qualidade. Tive uma experiência incrível, com todo o suporte necessário, inclusive aos finais de semana. Consegui fechar o melhor seguro e tirar dúvidas sobre resolução de sinistro. Profissionalismo e dedicação fora de série!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EE</div>
+            <div>
+              <strong>Eduardo Elias Vieira</strong>
+              <span>Seguro · 6 meses atrás</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-top">
+            <div class="stars">★★★★★</div>
+            <div class="google-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+          <p>"É muito bom quando somos bem atendidos. E o atendimento da Deise foi tão bom que deixei de fechar com amigos que já haviam feito algumas cotações pra mim pra fechar com ela, que conseguiu me entregar a melhor proposta com o melhor valor. Condições que ficaram muito melhor do que todas as outras que já havia recebido para o meu seguro veicular. Desejo sucesso e agradeço demais toda atenção que recebi! Indico demais o serviço dessa corretora."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">BF</div>
+            <div>
+              <strong>Bianca Flôr</strong>
+              <span>Seguro Veicular · 6 meses atrás</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-top">
+            <div class="stars">★★★★★</div>
+            <div class="google-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Google
+            </div>
+          </div>
+          <p>"Excelente!!! Felix Corretora, representada por Deise, fez um trabalho excelente, dedicou total empenho e disposição pra resolver a nossa questão com a seguradora. Graças a Deus e ao seu empenho Deise, deu tudo certo! Não esperava menos de você, obrigada por toda dedicação em nos ajudar!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CS</div>
+            <div>
+              <strong>Cassia Silva</strong>
+              <span>Seguro · 6 meses atrás</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO / CTA ===== -->
+  <section class="section section-dark" id="contato">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-text">
+          <span class="section-tag tag-gold">Entre em contato</span>
+          <h2 class="section-title light">Pronto para se<br /><span class="gold-text">proteger de verdade?</span></h2>
+          <p class="section-sub light">Fale agora com um consultor especializado e receba uma cotação gratuita e personalizada.</p>
+          <div class="contact-channels">
+            <a href="https://wa.me/5561981346835" class="channel-item" target="_blank">
+              <div class="channel-icon whatsapp-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>(61) 98134-6835 — atendimento imediato</span>
+              </div>
+            </a>
+            <a href="mailto:felixcorretoraseguros@gmail.com" class="channel-item">
+              <div class="channel-icon email-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <span>felixcorretoraseguros@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Solicite sua cotação gratuita</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input type="tel" id="telefone" placeholder="(00) 00000-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="interesse">Interesse</label>
+            <select id="interesse">
+              <option value="">Selecione o tipo de seguro</option>
+              <option>Plano de Saúde Individual</option>
+              <option>Plano de Saúde Familiar</option>
+              <option>Plano de Saúde Empresarial</option>
+              <option>Seguro de Vida</option>
+              <option>Seguro Auto</option>
+              <option>Seguro Residencial</option>
+              <option>Seguro Empresarial</option>
+              <option>Seguro Viagem</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" rows="3" placeholder="Conte um pouco mais sobre o que precisa..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold full-w">Solicitar Cotação Gratuita</button>
+          <p class="form-note">Sem compromisso. Cotação em até 60 minutos.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="Captura de tela 2026-04-29 225134.png" alt="Felix Seguros" class="footer-logo" />
+        <p>Felix Seguros — Corretora de seguros comprometida com sua proteção e bem-estar.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Serviços</h4>
+        <a href="#planos">Planos de Saúde</a>
+        <a href="#servicos">Seguro de Vida</a>
+        <a href="#servicos">Seguro Auto</a>
+        <a href="#servicos">Seguro Residencial</a>
+        <a href="#servicos">Seguro Empresarial</a>
+      </div>
+      <div class="footer-links">
+        <h4>Empresa</h4>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato">Trabalhe conosco</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5561981346835" target="_blank">WhatsApp</a>
+        <a href="mailto:felixcorretoraseguros@gmail.com">felixcorretoraseguros@gmail.com</a>
+        <div class="social-links">
+          <a href="https://www.instagram.com/deisefelixseguros?igsh=dm04Z2J5Y3M1OHlw" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 Felix Seguros. Todos os direitos reservados.</span>
+        <span>SUSEP: 00.000.000-0</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/5561981346835" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
